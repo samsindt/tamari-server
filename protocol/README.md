@@ -4,7 +4,7 @@ The tamari protocol defines a text encoding that is used by clients to make requ
 
 ## Specification
 
-A tamari protocol statement always starts with a single byte *operation prefix*. An operation prefix describes the purpose of the statement, including the purpose of a request or the purpose of a response. The available operation prefixes are:
+A tamari protocol statement always starts with a single byte *operation prefix*. An operation prefix describes the purpose of the statement, including the purpose of a request or the purpose of a response. The available operation prefixes are:  
 
 Symbol | Purpose | Request | Response
 - | - | - | - |

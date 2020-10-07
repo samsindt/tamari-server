@@ -8,11 +8,11 @@ A tamari protocol statement always starts with a single byte *operation prefix*.
 
 Symbol | Purpose | Request | Response
 --- | --- | --- | ---
-\+ | Write value at key | Yes | No  
-= | Read value at key | Yes | No  
-\- | Delete value at key | Yes | No  
-$ | Denote success of request | No | Yes  
-! | Denote failure of request | No | Yes
+\+ | Write value at key | Yes |  
+= | Read value at key | Yes | 
+\- | Delete value at key | Yes |  
+$ | Denote success of request | | Yes  
+! | Denote failure of request | | Yes
 <br>  
 
 An operation prefix is followed by zero or more *arguments*, depending on the specific operation prefix. Each argument begins with a number denoting the nunber of bytes that the argument body contains. This makes arguments *binary safe*, meaning that string contents do not need to be escaped. In order to delimit the number from the following argument body, the number is followed by the tab escape sequence `\t`. After the tab delimiter is the argument body which is a sequence of bytes. 

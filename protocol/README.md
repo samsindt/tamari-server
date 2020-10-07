@@ -10,7 +10,7 @@ Symbol | Purpose | Request | Response
 --- | --- | --- | ---
 + | Write value at key | Yes | No 
 = | Read value at key | Yes | No 
-- | Delete value at key | Yes | No |
+- | Delete value at key | Yes | No
 $ | Denote success of request | No | Yes
 ! | Denote failure of request | No | Yes
 <br>  

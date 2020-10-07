@@ -41,5 +41,5 @@ The following examples will assume that arguments are ASCII strings with no null
     $3\tfoo\n
 6. A response from an unsuccessful read request to key *bar* which does not exist:
     ```
-    !3\t100 \t20No value at key: bar\n
+    !3\t100\t20No value at key: bar\n
     ```

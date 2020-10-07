@@ -1,6 +1,6 @@
 # Tamari Protocol
 
-The tamari protocol defines a text encoding that is used by clients to make requests to the server and for the server to respond to clients. The protocol is also used in writing to the write-ahead log.
+The tamari protocol defines a text encoding that is used by clients to make requests to a server and for a server to respond to clients. A server also uses the protocol when writing to the write-ahead log.
 
 ## Specification
 
@@ -23,7 +23,7 @@ After the arguments is the newline escape sequence `\n` to denote the conclusion
 The following examples will assume that arguments are ASCII strings with no null terminator, but could be any byte sequence.
 1. A request to write the value *foo* to key *bar*:
     ```
-    +3\tfoo3\tbar\n
+    +3\tbar3\tfoo\n
     ```
 2. A request to read the value at key *bar*:
     ```
